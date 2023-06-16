@@ -1,0 +1,775 @@
+@import url(./fonts.css);
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    border: none;
+    outline: none;
+}
+
+
+body {
+    width: 100vw;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+/* --- HEADER --- */
+header {
+    height: 64px;
+    display: flex;
+    width: 100vw;
+    background-color: #fafafa;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.header__logo,
+.menu-list {
+    display: flex;
+}
+
+.header__logo {
+    margin: 0 0 0 20px;
+}
+
+.logo {
+    width: 98px;
+}
+
+.menu-list {
+    margin-right: 50px;
+}
+
+.menu__item:first-child {
+    margin-right: 20px;
+}
+
+.menu__link {
+    color: rgba(0, 0, 0, 0.92);
+    font: 600 14px/16px "Volvo Novum", sans-serif;
+}
+
+.menu__link:hover {
+    border-bottom: 1px solid #000;
+    padding-bottom: 12px;
+}
+
+.background {
+    height: 110vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.75);
+    z-index: 100;
+    display: none;
+      }
+
+.menu {
+    height: 110vh;
+    width: 30%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    overflow: hidden;
+    transition: 0.3s;
+    background-color: #fafafa;
+    z-index: 100;
+}
+
+.menu__blog-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: self-start;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #dad5d58f;
+}
+
+.menu__logo {
+    margin: 20px 0 0 20px;
+}
+
+.mobile-menu {
+    margin: 15px 20px 0 0;
+    width: 33px;
+    height: 33px;
+    background-color: #fafafa;
+    z-index: 110;
+}
+
+.mobile-menu:hover {
+    border: 1px solid #dad5d58f;
+    background-color: #dad5d58f;
+    border-radius: 50%;
+}
+
+.menu__blog-2 {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #dad5d58f;
+}
+
+.menu-list-2 {
+    display: flex;
+    flex-direction: column;
+    padding:10px 0 10px 20px;
+    gap: 20px;
+}
+
+
+.menu__link-2 {
+    color: rgba(0, 0, 0, 0.92);
+    font: 500 20px/1.4 "Volvo Novum", sans-serif;
+    display: flex;
+    justify-content: space-between;
+    width: 27.5vw;
+}
+
+.menu__blog-3 {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #dad5d58f;
+}
+
+.menu-country {
+    padding: 20px 0 0 20px;
+    color: rgba(0, 0, 0, 0.56);
+    font: 300 14px/0.9 "Volvo Novum", sans-serif;
+}
+
+.menu__blog-4 {
+    display: flex;
+    padding: 20px 0 0 20px;
+    gap: 20px;
+}
+
+.background.open {
+    display: flex;
+}
+
+.menu.open {
+    display: flex;
+}
+
+/* --- FIRST SECTION  --- */
+.first__section {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    width: 100vw;
+    height: 100vh;
+    margin: 64px 0 0 0;
+}
+
+.banner {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    grid-row: 1/2;
+    grid-column: 1/2;
+    left: 0;
+    right: 0;
+}
+
+.banner__wrap {
+    width: 100vw;
+    grid-row: 1/2;
+    grid-column: 1/2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+}
+
+.banner__text {
+    margin-top: 15px;
+    font: 500 20px/1.4 "Volvo Novum", Arial, sans-serif;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.big {
+    margin-top: 5px;
+    height: 72px;
+    font: 900 72px/1 "Volvo Broad", sans-serif;
+}
+
+.link {
+    font: 500 14px/28px "Volvo Novum", sans-serif;
+}
+
+.link:hover {
+    color: #d6d4d48f;
+}
+
+/* --- SECOND SECTION --- */
+.second__section {
+    width: 100vw;
+    margin-top: 100px;
+}
+
+.second__section,.second__baner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.volvo-recharge {
+    color: #000;
+}
+
+.second__baner {
+    margin-top: 80px;
+    gap: 9px;
+}
+
+.section-title {
+    width: 80vw;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.56);
+    font: 500 32px/28px "Volvo Novum", sans-serif;
+}
+
+.second__baner-image-first {
+    width: 100vw;
+}
+
+.second__baner-image-second {
+    width: 56.5vw;
+}
+
+.second__baner-image-third {
+    width: 42.5vw;
+}
+
+.second__baner-button {
+    text-align: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.second__section-link {
+    text-transform: uppercase;
+    color: #2a609d;
+    border: 1px solid #2a609d;
+    font: 500 14px/22px "Volvo Novum", sans-serif;
+    padding: 12px 24px;
+    border-radius: 5px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.second__section-link:hover {
+    color: white;
+    background: #2a609d;
+}
+
+/* Third section */
+.third__section {
+    margin-top: 90px;
+    width: 100vw;
+}
+
+.third__section-title {
+    text-align: center;
+    color: #000;
+    font: 600 28px/1.4 "Volvo Novum", sans-serif;
+}
+
+.third__baner {
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(3, auto);
+    justify-content: center;
+    grid-gap: 50px;
+}
+
+.third__baner-image-first {
+    grid-row: 1/2;
+    grid-column: 1/2;
+    width: 45vw;
+}
+
+.third__baner-image-second {
+    grid-row: 1/2;
+    grid-column: 2/3;
+    width: 45vw;
+}
+
+.third__title-white-car {
+    grid-row: 1/2;
+    grid-column: 1/2;
+    text-align: center;
+}
+
+.third__title-text{
+    margin: 40px 0 0 0;
+    font: 500 14px/1.5 "Volvo Novum", sans-serif;
+    color: #fff;
+}
+
+.third__title-btext {
+    font: 900 28px/1 "Volvo Broad", sans-serif;
+    color: #fff;
+    margin: 10px 0 0 0;
+    letter-spacing: 0.32px;
+    text-transform: uppercase;
+}
+
+
+.third__title-grey-car {
+    grid-row: 1/2;
+    grid-column: 2/3;
+    text-align: center;
+}
+
+.third__section-button-white-car {
+    grid-row: 2/3;
+    grid-column: 1/2;
+    text-align: center;
+
+}
+
+.third__section-link {
+    color: #2a609d;
+    text-transform: uppercase;
+    letter-spacing: 0.32px;
+    font: 600 14px/1.37 "Volvo Novum", sans-serif;
+}
+
+.third__section-button-grey-car {
+    grid-row: 2/3;
+    grid-column: 2/3;
+    text-align: center;
+}
+
+.third__section-link:hover {
+    color: #000;
+}
+
+/*FORTH SECTION*/
+.forth__section {
+    margin-top: 120px;
+    width: 100vw;
+}
+
+.forth__section-title {
+    text-align: center;
+    padding: 0 0 50px 0;
+    color: #000;
+    font: 600 32px/1.12 "Volvo Novum", sans-serif;
+}
+
+.forth__section-card {
+    text-align: left;
+    width: 290px;
+}
+.swiper-wrapper {
+    margin-left: 25px;
+}
+.forth__section-link {
+    display: flex;
+    text-align: center;
+    margin-left: 80px;
+    margin-top: 20px;
+    color: #2a609d;
+    text-transform: uppercase;
+    font: 600 14px/22px "Volvo Novum", sans-serif;
+    letter-spacing: 0.32px;
+}
+.imagebox {
+    display: inline-block;
+    overflow: hidden;
+    width: 290px;
+    height: 200px;
+}
+.image__forth-section {
+    width: 100%;
+    height: 100%;
+    margin-top: 10px;
+    object-fit: cover;
+}
+.forth__section-card .card-title,
+.forth__section-card .card-model,
+.forth__section-card .card-info,
+.forth__section-card .image__forth-section {
+   transition: all 0.3s ease-in-out;
+}
+
+.forth__section-card .image__forth-section {
+    transform: scale(1);
+}
+.forth__section-card:hover .card-title,
+.forth__section-card:hover .card-model,
+.forth__section-card:hover .card-info {
+  color: #2a609d;
+  transition: all 0.3s ease-in-out;
+}
+
+.forth__section-card:hover .image__forth-section {
+  transform: scale(1.2);
+  transition: all 0.3s ease-in-out;
+}
+
+.forth__section-link:hover,
+.button:hover {
+    color: rgba(0, 0, 0, 0.92);
+}
+
+.card-title {
+    text-transform: uppercase;
+    font: 500 12px/1.6 "Volvo Novum", sans-serif;
+    letter-spacing: 0.32px;
+    color: rgba(0, 0, 0, 0.56);
+}
+
+.card-model {
+    font: 500 16px/1.5 "Volvo Novum", sans-serif;
+    color: rgba(0, 0, 0, 0.92);
+
+}
+
+.card-info {
+    font: 300 14px/1.5 "Volvo Novum", sans-serif;
+    color: rgba(0, 0, 0, 0.56);
+
+}
+
+.forth__section-button {
+    width: auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.button {
+    text-transform: uppercase;
+    font: 600 14px/22px "Volvo Novum", sans-serif;
+    color: #2a609d;
+    padding-right: 20px;
+}
+
+/*FIFTH SECTION*/
+.fifth__section {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 100px;
+    width: 100vw;
+    background-color: #fafafa;
+}
+
+.fifth__section-title {
+    padding: 40px 0;
+    width: 70vw;
+    text-align: center;
+    font: 600 32px/1.12 "Volvo Novum", sans-serif;
+    color: rgba(0, 0, 0, 0.56);
+}
+
+.image5 {
+    width: 95vw;
+}
+
+.fifth__section-cards {
+    display: flex;
+    justify-content: space-between;
+    width: 95vw;
+}
+
+.fifth__section-card {
+    width: 30vw;
+}
+
+.fiftt-card-title {
+    color: #000;
+    font: 700 20px/1.4 "Volvo Novum", sans-serif;
+    padding: 15px 0 10px 0;
+}
+
+.fiftt-card-info {
+    font: 300 16px/1.5 "Volvo Novum", sans-serif;
+    color: rgba(0, 0, 0, 0.56);
+    padding-bottom: 90px;
+}
+
+.fifth__section-button {
+    text-align: center;
+    justify-content: center;
+    margin: 10px 0 50px 0;
+
+}
+
+.fifth__section-link {
+    text-transform: uppercase;
+    color: #2a609d;
+    font: 500 14px/22px "Volvo Novum", sans-serif;
+    padding: 12px 24px;
+    letter-spacing: 0.32px;
+    border: 1px solid #2a609d;
+    border-radius: 5px;
+    text-align: center;
+    transition: 0.4s;
+}
+
+.fifth__section-link:hover {
+    color: white;
+    background: #2a609d;
+}
+
+/*--- SIXTH SECTION---*/
+
+.sixth__section {
+    width: 100vw;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+
+}
+
+.sixth__section-title {
+    margin: 0 0 50px 10px;
+    font: 600 16px/1.5 "Volvo Novum", sans-serif;
+}
+
+.sixth__section-link {
+    display: grid;
+    grid-template-columns: repeat(2, 30vw);
+    grid-template-rows: repeat(2, auto);
+    grid-gap: 15px;
+}
+
+.link-wrap {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #dad5d58f;
+    border-bottom: 1px solid #dad5d58f;
+    padding: 20px 0 20px 0;
+}
+
+.link-item {
+    color: #2a609d;
+    font: 300 16px/1.5 "Volvo Novum", sans-serif;
+}
+
+.link-item:hover {
+    color: #000;
+}
+
+.link-item-2 {
+    color: #dad5d58f;
+    font: 600 15px/1.5 "Volvo Novum", sans-serif;
+}
+
+
+
+/* SEVEN SECTION */
+
+.seven__section{
+    display: flex;
+    justify-content: center;
+    margin: 100px 0;
+    width: 100vw;
+}
+.seven__section-text {
+    text-align: center;
+    font: 300 12px/1.6 "Volvo Novum", sans-serif;
+    color: rgba(0, 0, 0, 0.56);
+}
+
+/* ---FOOTER--- */
+
+footer {
+    width: 100vw;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fafafa;
+}
+
+.footer__menu {
+    display: flex;
+    gap: 20px;
+}
+
+.footer__menu-item {
+    font: 300 12px/1.6 "Volvo Novum", sans-serif;
+    color: rgba(0, 0, 0, 0.56);
+}
+
+.footer__menu-item:hover {
+    color: #2a609d;
+}
+
+@media screen and (width <=1080px) {
+   
+    .third__baner {
+        grid-template-columns: auto;
+        grid-template-rows: repeat(4, auto);
+    }
+
+    .third__baner-image-first {
+        grid-row: 1/2;
+        grid-column: 1/2;
+        width: 95vw;
+    }
+
+    .third__baner-image-second {
+        grid-row: 3/4;
+        grid-column: 1/2;
+        width: 95vw;
+    }
+    .third__title-btext {
+        font: 900 40px/1 "Volvo Broad", sans-serif;
+    }
+
+    .third__title-white-car {
+        grid-row: 1/2;
+        grid-column: 1/2;
+    }
+
+    .third__title-grey-car {
+        grid-row: 3/4;
+        grid-column: 1/2;
+    }
+
+    .third__section-button-white-car {
+        grid-row: 2/3;
+        grid-column: 1/2;
+
+    }
+
+    .third__section-button-grey-car {
+        grid-row: 4/5;
+        grid-column: 1/2;
+
+    }
+
+    .third__title-text-white-car,
+    .third__title-text-grey-car {
+        margin: 60px 0 0 0;
+        font: 500 26px/1.5 "Volvo Novum", sans-serif;
+        color: #fff;
+    }
+
+    .third__title-btext-grey-car,
+    .third__title-btext-white-car {
+        font: 900 45px/1 "Volvo Broad", sans-serif;
+        margin: 20px 0 0 0;
+    }
+}
+
+@media screen and (width <=900px) {
+    .second__baner-image-second {
+        width: 56vw;
+    }
+
+    .second__baner-image-third {
+        width: 42.6vw;
+    }
+}
+
+@media screen and (width <=690px) {
+    .background {
+        background-color: rgba(0, 0, 0, 0);
+    }
+    .menu {
+        width: 100%;
+    }
+    .menu__link-2 {
+        width: 92.5vw;
+    }
+    
+    .second__baner-image-second {
+        width: 55.7vw;
+    }
+
+    .second__baner-image-third {
+        width: 42.5vw;
+    }
+
+    .section-title {
+        text-align: left;
+    }
+
+    .fifth__section-cards {
+        flex-direction: column;
+    }
+
+    .fifth__section-card {
+        width: 80vw;
+    }
+
+    .fiftt-card-info {
+        padding-bottom: 20px;
+    }
+
+    .image5 {
+        width: 100vw;
+    }
+
+    .sixth__section-link {
+        grid-template-columns: 95vw;
+        grid-template-rows: repeat(4, auto);
+        grid-gap: 15px;
+    }
+
+    .cars {
+        display: none;
+    }
+
+    .sixth__section-text {
+        text-align: left;
+    }
+}
+
+@media screen and (width <=627px) {
+    .second__baner-image-second {
+        width: 49.1vw;
+    }
+
+    .second__baner-image-third {
+        width: 49vw;
+    }
+
+}
+
+@media screen and (width <=472px) {
+    .second__baner-image-second {
+        width: 48.1vw;
+    }
+
+    .footer__menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
